@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+
+# Generated outputs (not committed)
+logs/*.log
+reports/json/*.json
+reports/html/*.html
+reports/pdf/*.pdf
+reports/report.json
+
+# Lab artifacts
+lab/*.exe
+lab/*.sh
+lab/*.ps1
+lab/*.bat
+lab/*.tmp
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.zip
+bandit.json
+flake8.log
+test_run.log
