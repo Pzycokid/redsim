@@ -1,0 +1,9 @@
+[tool.pyright]
+include = ["."]
+extraPaths = ["."]
+pythonVersion = "3.8"
+pythonPlatform = "Windows"
+typeCheckingMode = "basic"
+
+[tool.pyre]
+source_directories = ["."]
