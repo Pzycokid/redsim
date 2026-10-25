@@ -1,0 +1,11 @@
+flask
+jinja2
+pandas
+matplotlib
+fpdf2
+rich
+tabulate
+colorama
+pyyaml
+requests
+psutil
