@@ -1,0 +1,19 @@
+{
+    "name": "APT29 Mock Sequence",
+    "description": "APT29-inspired stealth intrusion simulation.",
+    "attacker_profile": "Advanced Persistent Threat (APT29)",
+    "category": "Advanced Intrusion",
+    "attack_complexity": "High",
+    "objectives": "Establish a deep hidden footprint, harvest credentials, pivot laterally, exfiltrate data.",
+    "tactics": "Reconnaissance, Credential Access, Persistence, Lateral Movement, Exfiltration",
+    "expected_outputs": "SMB hop telemetry, offline archive compressions mimicking C2 channels.",
+    "defensive_value": "Critical",
+    "risk_level": "Critical",
+    "steps": [
+        {"id": "step_1", "technique": "T1082", "name": "Target Profile Initialization", "module": "recon", "enabled": true},
+        {"id": "step_2", "technique": "T1110", "name": "Credential Access Mapping", "module": "credential_access", "enabled": true},
+        {"id": "step_3", "technique": "T1547", "name": "Silent Footprint Autostart", "module": "persistence", "enabled": true},
+        {"id": "step_4", "technique": "T1021", "name": "Lateral Evaluation via Admin Shares", "module": "lateral_movement", "enabled": true},
+        {"id": "step_5", "technique": "T1041", "name": "Encrypted Web Service Egress", "module": "exfiltration", "enabled": true}
+    ]
+}
